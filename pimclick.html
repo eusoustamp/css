@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PimClick CSS responsive lab</title>
+    <style>
+        @media only screen and (max-width: 480px) {
+          .name{
+            grid-column: 1/3;
+          }
+
+        }
+        body {
+            font-family: Open-Sans,sans-serif;
+            text-align: center;
+        }
+        .form {
+            background-color: #fff;
+        width: 60%;
+        height: auto;
+        color: black;
+        margin: 0 auto;
+        border-radius: 30px;
+        padding: 50px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1)
+        }
+        .input-contact {
+            display: grid;
+        grid-template-columns: repeat(2, 1fr);
+         grid-template-rows: 5fr;
+         text-align: left;
+        margin-top: 50px;
+        }
+        .subject {
+            grid-column: 1/3;
+}
+
+
+        .message input {
+            padding: 100px 0;
+}
+        button {
+            text-align: center;
+            background-color: red;
+            color:white;
+            padding: 15px;
+           
+        }
+
+input[type="text"] {
+    margin: 10px 0 40px 0;
+    padding: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 98%;
+}
+.message {
+    grid-column: 1/3;
+            
+}
+
+    </style>
+</head>
+<body>
+        <div class="form">
+            <h1>Contact us <span style="color: red;">today</span></h1>
+            <div class="input-contact">
+                <div class="name">
+                    <form action="#">
+                        <label for="#">Your Name (required)</label> <br>
+                        <input type="text">
+                    </form>
+                </div>
+                <div class="name">
+                    <form action="#">
+                        <label for="#">Your Email (required)</label> <br>
+                        <input type="text">
+                    </form>
+                </div>
+                <div class="subject">
+                    <form action="#">
+                        <label for="#">Subject</label><br>
+                        <input type="text">
+                    </form>
+                </div>
+                <br>
+                <div class="message">
+                    <form action="#">
+                        <label for="#">Your Message</label><br>
+                        <input type="text">
+                    </form>
+                </div>
+                    <div class="submit">
+                        <button type="button" id="send" name="send">SEND</button>
+                    </div>
+            </div>
+        </div>
+</body>
+</html>
