@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive CSS lab</title>
+    <style>
+        .image {
+            text-align: center;
+        }
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3,auto);
+        }
+        .box {
+            height: auto;
+            padding: 20px;
+            background-color: rgb(241, 144, 220);
+        }
+        @media only screen and (max-width: 480px) {
+           
+            .container {
+                grid-template-columns: auto;
+                
+            }
+
+
+        }
+
+        @media only screen and (min-width: 481px) and (max-width: 960px) {
+  
+            .container {
+                grid-template-columns: repeat(2, auto);
+                grid-gap: 5%;
+            }
+
+        }
+
+        @media only screen and (min-width: 961px) {
+            .container {
+                grid-template-columns: repeat(3, auto);
+                grid-gap: 5%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="image">
+        <img src="https://media.istockphoto.com/photos/mount-fuji-at-lake-kawaguchiko-with-cherry-blossom-in-yamanashi-near-picture-id1060517676?k=6&m=1060517676&s=612x612&w=0&h=dsHdbqGvPMstOy1CwN9T6VHxhXnvi4u1FBS0ctgJ2b0=" alt="">
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <h2>Tokyo</h2>
+            <p>Tokyo (/ˈtoʊkioʊ, -kjoʊ/; Japanese: 東京, Tōkyō [toːkʲoː] (About this soundlisten)), officially Tokyo Metropolis (東京都, Tōkyō-to), is the capital and most populous prefecture of Japan. Located at the head of Tokyo Bay, the prefecture forms part of the Kantō region on the central Pacific coast of Japan's main island, Honshu. Tokyo is the political and economic center of the country, as well as the seat of the Emperor of Japan and the national government. In 2019, the prefecture had an estimated population of 13,929,280.[4] The Greater Tokyo Area is the most populous metropolitan area in the world, with more than 37.4 million residents as of 2018.[5]</p>
+        </div>
+        <div class="box">
+            <h2>Hokkaido</h2>
+            <p> Hokkaido (Japanese: 北海道, Hokkaidō [hokːaꜜidoː] (About this soundlisten), "Northern Sea Circuit") is the second largest island of Japan, and the largest and northernmost prefecture.[1] The Tsugaru Strait separates Hokkaido from Honshu, and the two islands are connected by the undersea railway Seikan Tunnel. The largest city on Hokkaido is its capital, Sapporo, which is also its only ordinance-designated city. Sakhalin lies about 43 kilometers (26 mi) to the north of Hokkaido, and to the east and northeast are the Kuril Islands, which are administered by Russia, though the four most southerly are claimed by Japan. Hokkaido was formerly known as Ezo, Yezo, Yeso, or Yesso.[2] </p>
+        </div>
+        <div class="box">
+            <h2>Osaka</h2>
+            <p> Osaka (Japanese: 大阪市, Hepburn: Ōsaka-shi, pronounced [oːsakaɕi]; commonly just 大阪, Ōsaka [oːsaka] (About this soundlisten)) is a designated city in the Kansai region of Honshu in Japan. It is the capital city of Osaka Prefecture and the largest component of the Keihanshin Metropolitan Area, the second largest metropolitan area in Japan and among the largest in the world with more than 20 million inhabitants. </p>
+        </div>
+        <div class="box">
+            <h2>Fukuoka</h2>
+            <p> Fukuoka (福岡市, Fukuoka-shi, pronounced [ɸɯ̥kɯokaꜜɕi]) is the capital city of Fukuoka Prefecture, situated on the northern shore of the Japanese island of Kyushu. It is the most populous city on the island, followed by Kitakyushu. It is the largest city and metropolitan area west of Keihanshin. The city was designated on April 1, 1972, by government ordinance. Greater Fukuoka, with a population of 2.5 million people (2005 census), is part of the heavily industrialized Fukuoka–Kitakyushu zone.</p>
+        </div>
+        <div class="box">
+            <h2>Sendai</h2>
+            <p> Sendai (仙台市, Sendai-shi, Japanese: [seꜜndai]) is the capital city of Miyagi Prefecture, Japan, the largest city in the Tōhoku region, and the second largest city north of Tokyo. As of 1 June 2020, the city had a population of 1,091,407 in 525,828 households [2], and is one of Japan's 20 designated cities. The city was founded in 1600 by the daimyō Date Masamune. It is nicknamed the City of Trees (杜の都, Mori no Miyako); there are zelkova trees lining many of the main thoroughfares such as Jōzenji Street (定禅寺通, Jōzenji dōri) and Aoba Street (青葉通, Aoba dōri).</p>
+        </div>
+        <div class="box">
+            <h2>Nagoya</h2>
+            <p>  Nagoya (名古屋市, Nagoya-shi) is the largest city in the Chūbu region of Japan. It is Japan's fourth-largest incorporated city and the third most populous urban area. Located on the Pacific coast on central Honshu, it is the capital of Aichi Prefecture and is one of Japan's major ports along with those of Tokyo, Osaka, Kobe, Yokohama, and Chiba. It is also the center of Japan's third-largest metropolitan region, known as the Chūkyō metropolitan area. As of 1 October 2019, 2,327,557 people lived in the city, part of Chūkyō metropolitan Area's 10.11 million people,[4] making it one of the 50 largest urban areas in the world.</p>
+        </div>
+    </div>
+</body>
+</html>
