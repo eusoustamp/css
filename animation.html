@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .example1 {
+
+            width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example1;
+  animation-duration: 4s;
+  position:relative;
+  visibility: hidden;
+}
+        @keyframes example1 {
+  from {
+    width: 100px;
+  height: 100px;
+      background-color: red;
+      border:solid 5px black;
+      visibility: visible;
+      }
+  to {
+      width:200px;
+      height:200px;
+      border:dotted 10px black;
+      background-color: yellow;
+      visibility: visible;
+      }
+}
+.example2{
+    width: 5px;
+  height: 5px;
+    margin-top: 50px;
+    background-color:blue;
+  animation-name: example2;
+  animation-duration: 4s;
+  position:relative;
+  visibility: hidden;
+}
+@keyframes example2 {
+  0%   {
+    visibility: visible;width: 10px;
+  height: 10px;
+  background-color: red;}
+  25%  {width: 20px;
+  height: 30px;
+      background-color: yellow;}
+  50%  {width: 40px;
+  height: 40px;
+      background-color: blue;}
+  100% {width: 50px;
+  height: 50px;
+      background-color: green;}
+}
+
+    </style>
+</head>
+<body>
+    <div class="example1"></div>
+    <div class="example2"></div>
+</body>
+</html>
