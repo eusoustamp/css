@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+       
+.example1{
+    width: 5px;
+  height: 5px;
+    margin-top: 50px;
+    background-color:blue;
+    animation: 4s normal 3s 5 running example1;
+  position:relative;
+  visibility: hidden;
+}
+@keyframes example1 {
+  0%   {
+    visibility: visible;width: 10px;
+  height: 10px;
+  background-color: red;}
+  25%  {width: 20px;
+  height: 30px;
+      background-color: yellow;}
+  50%  {width: 40px;
+  height: 40px;
+      background-color: blue;}
+      75% {width: 50px;
+  height: 50px;
+      background-color: green;}
+      100% {width: 70px;
+  height: 70px;
+      background-color: orange;}
+}
+.example2{
+    animation: 4s reverse 1s 5 running example2;
+    width: 5px;
+  height: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color:blue;
+  position:relative;
+  visibility: hidden;
+}
+@keyframes example2 {
+  0%   {
+    visibility: visible;width: 10px;
+  height: 10px;
+  background-color: red;}
+  25%  {width: 20px;
+  height: 30px;
+      background-color: yellow;}
+  50%  {width: 40px;
+  height: 40px;
+      background-color: blue;}
+      75% {width: 50px;
+  height: 50px;
+      background-color: green;}
+      100% {width: 70px;
+  height: 70px;
+      background-color: orange;}
+}
+.example3{
+    width: 100px;
+    height:100px;
+    animation: 3s linear 1s infinite running example3;
+}
+@keyframes example3 {
+  0%   {
+    transform: scaleX(0);background-color: red;}
+  25%  {transform: scaleX(0.25);background-color: green;}
+  50%  {transform: scaleX(0.5);background-color: blue;}
+  75% {transform: scaleX(0.75);background-color: yellow;}
+      100% {transform: scaleX(1);background-color: orange;}
+}
+
+    </style>
+</head>
+<body>
+    <div class="example1"></div>
+    <div class="example2"></div>
+    <div class="example3"></div>
+</body>
+</html>
